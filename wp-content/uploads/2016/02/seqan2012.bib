@@ -1,0 +1,63 @@
+%% Created using Papers on Tue, 16 Feb 2016.
+%% http://papersapp.com/papers/
+
+@article{Weese:2012byb,
+author = {Weese, David and Holtgrewe, Manuel and Reinert, Knut},
+title = {{RazerS 3: faster, fully sensitive read mapping.}},
+journal = {Bioinformatics (Oxford, England)},
+year = {2012},
+volume = {28},
+number = {20},
+pages = {2592--2599},
+month = oct,
+publisher = {Oxford University Press},
+affiliation = {Department of Mathematics and Computer Science, Freie Universit{\"a}t Berlin, Berlin, Germany. david.weese@fu-berlin.de},
+doi = {10.1093/bioinformatics/bts505},
+pmid = {22923295},
+language = {English},
+read = {Yes},
+rating = {0},
+date-added = {2014-06-18T11:28:14GMT},
+date-modified = {2016-01-14T20:10:02GMT},
+abstract = {MOTIVATION:During the past years, next-generation sequencing has become a key technology for many applications in the biomedical sciences. Throughput continues to increase and new protocols provide longer reads than currently available. In almost all applications, read mapping is a first step. Hence, it is crucial to have algorithms and implementations that perform fast, with high sensitivity, and are able to deal with long reads and a large absolute number of insertions and deletions.
+
+RESULTS:RazerS is a read mapping program with adjustable sensitivity based on counting q-grams. In this work, we propose the successor RazerS 3, which now supports shared-memory parallelism, an additional seed-based filter with adjustable sensitivity, a much faster, banded version of the Myers' bit-vector algorithm for verification, memory-saving measures and support for the SAM output format. This leads to a much improved performance for mapping reads, in particular, long reads with many errors. We extensively compare RazerS 3 with other popular read mappers and show that its results are often superior to them in terms of sensitivity while exhibiting practical and often competitive run times. In addition, RazerS 3 works without a pre-computed index.
+
+AVAILABILITY AND IMPLEMENTATION:Source code and binaries are freely available for download at http://www.seqan.de/projects/razers. RazerS 3 is implemented in C++ and OpenMP under a GPL license using the SeqAn library and supports Linux, Mac OS X and Windows.},
+url = {http://bioinformatics.oxfordjournals.org/cgi/doi/10.1093/bioinformatics/bts505},
+local-url = {file://localhost/Users/reinert/Dropbox/Library.papers3/Articles/2012/Weese/Bioinformatics%202012%20Weese-1.pdf},
+file = {{Bioinformatics 2012 Weese-1.pdf:/Users/reinert/Dropbox/Library.papers3/Articles/2012/Weese/Bioinformatics 2012 Weese-1.pdf:application/pdf;Bioinformatics 2012 Weese-1.pdf:/Users/reinert/Dropbox/Library.papers3/Articles/2012/Weese/Bioinformatics 2012 Weese-1.pdf:application/pdf}},
+uri = {\url{papers3://publication/doi/10.1093/bioinformatics/bts505}}
+}
+
+@article{Emde:2012ui,
+author = {Emde, A and Schulz, Marcel H and Weese, David and Sun, Ruping and Vingron, Martin and Kalscheuer, Vera M and Haas, Stefan A and Reinert, Knut},
+title = {{Detecting genomic indel variants with exact breakpoints in single- and paired-end sequencing data using SplazerS}},
+journal = {Bioinformatics (Oxford, England)},
+year = {2012},
+volume = {28},
+number = {5},
+pages = {619--627},
+month = mar,
+publisher = {Oxford University Press},
+affiliation = {Department of Computer Science, Freie Universit{\"a}t Berlin, Takustrasse 9, Max-Planck-Institute for Molecular Genetics, Berlin, Germany. emde@inf.fu-berlin.de},
+doi = {10.1093/bioinformatics/bts019},
+pmid = {22238266},
+language = {English},
+read = {Yes},
+rating = {5},
+date-added = {2012-01-24T21:49:19GMT},
+date-modified = {2016-01-14T20:10:20GMT},
+abstract = {MOTIVATION:The reliable detection of genomic variation in resequencing data is still a major challenge, especially for variants larger than a few base pairs. Sequencing reads crossing boundaries of structural variation carry the potential for their identification, but are difficult to map.
+
+RESULTS:Here we present a method for 'split' read mapping, where prefix and suffix match of a read may be interrupted by a longer gap in the read-to-reference alignment. We use this method to accurately detect medium-sized insertions and long deletions with precise breakpoints in genomic resequencing data. Compared with alternative split mapping methods, SplazerS significantly improves sensitivity for detecting large indel events, especially in variant-rich regions. Our method is robust in the presence of sequencing errors as well as alignment errors due to genomic mutations/divergence, and can be used on reads of variable lengths. Our analysis shows that SplazerS is a versatile tool applicable to unanchored or single-end as well as anchored paired-end reads. In addition, application of SplazerS to targeted resequencing data led to the interesting discovery of a complete, possibly functional gene retrocopy variant.
+
+AVAILABILITY:SplazerS is available from http://www.seqan.de/projects/ splazers.
+
+SUPPLEMENTARY INFORMATION:Supplementary data are available at Bioinformatics online.},
+url = {http://bioinformatics.oxfordjournals.org/content/28/5/619.full},
+local-url = {file://localhost/Users/reinert/Dropbox/Library.papers3/Articles/2012/Emde/Bioinformatics%202012%20Emde.pdf},
+file = {{Bioinformatics 2012 Emde.pdf:/Users/reinert/Dropbox/Library.papers3/Articles/2012/Emde/Bioinformatics 2012 Emde.pdf:application/pdf;Bioinformatics 2012 Emde.pdf:/Users/reinert/Dropbox/Library.papers3/Articles/2012/Emde/Bioinformatics 2012 Emde.pdf:application/pdf}},
+uri = {\url{papers3://publication/doi/10.1093/bioinformatics/bts019}}
+}
+

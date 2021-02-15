@@ -1,0 +1,186 @@
+%% Created using Papers on Fri, 18 Dec 2015.
+%% http://papersapp.com/papers/
+
+@article{Rausch:2008bk,
+author = {Rausch, T and Emde, A and Weese, David and D{\"o}ring, Andreas and Notredame, C and Reinert, Knut},
+title = {{Segment-based multiple sequence alignment.}},
+journal = {Bioinformatics (Oxford, England)},
+year = {2008},
+volume = {24},
+number = {16},
+pages = {i187--192},
+month = aug,
+affiliation = {International Max Planck Research School for Computational Biology and Scientific Computing, Ihnestr 63-73, 14195 Berlin, Germany. rausch@inf.fu-berlin.de},
+doi = {10.1093/bioinformatics/btn281},
+pmid = {18689823},
+language = {English},
+read = {Yes},
+rating = {0},
+date-added = {2008-10-31T11:26:05GMT},
+date-modified = {2015-11-06T12:10:11GMT},
+abstract = {MOTIVATION:Many multiple sequence alignment tools have been developed in the past, progressing either in speed or alignment accuracy. Given the importance and wide-spread use of alignment tools, progress in both categories is a contribution to the community and has driven research in the field so far.
+
+RESULTS:We introduce a graph-based extension to the consistency-based, progressive alignment strategy. We apply the consistency notion to segments instead of single characters. The main problem we solve in this context is to define segments of the sequences in such a way that a graph-based alignment is possible. We implemented the algorithm using the SeqAn library and report results on amino acid and DNA sequences. The benefit of our approach is threefold: (1) sequences with conserved blocks can be rapidly aligned, (2) the implementation is conceptually easy, generic and fast and (3) the consistency idea can be extended to align multiple genomic sequences.
+
+AVAILABILITY:The segment-based multiple sequence alignment tool can be downloaded from http://www.seqan.de/projects/msa.html. A novel version of T-Coffee interfaced with the tool is available from http://www.tcoffee.org. The usage of the tool is described in both documentations.},
+url = {http://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?dbfrom=pubmed&id=18689823&retmode=ref&cmd=prlinks},
+local-url = {file://localhost/Users/reinert/Dropbox/Library.papers3/Articles/2008/Rausch/Bioinformatics%202008%20Rausch.pdf},
+file = {{Bioinformatics 2008 Rausch.pdf:/Users/reinert/Dropbox/Library.papers3/Articles/2008/Rausch/Bioinformatics 2008 Rausch.pdf:application/pdf}},
+uri = {\url{papers3://publication/doi/10.1093/bioinformatics/btn281}}
+}
+
+@article{Sturm:2008eu,
+author = {Bertsch, A and Sturm, Marc and Gr{\"o}pl, Clemens and Hildebrandt, Andreas and Hussong, Rene and Lange, Eva and Pfeifer, Nico and Schulz-Trieglaff, Ole and Zerck, Alexandra and Reinert, Knut and Kohlbacher, Oliver},
+title = {{OpenMS - an open-source software framework for mass spectrometry.}},
+journal = {BMC Bioinformatics},
+year = {2008},
+volume = {9},
+pages = {163},
+affiliation = {Center for Bioinformatics, Eberhard Karls University T{\"u}bingen, Sand 14, 72076 T{\"u}bingen, Germany. sturm@informatik.uni-tuebingen.de},
+doi = {10.1186/1471-2105-9-163},
+pmid = {18366760},
+pmcid = {PMC2311306},
+language = {English},
+rating = {5},
+date-added = {2008-03-31T00:53:33GMT},
+date-modified = {2015-11-06T12:10:09GMT},
+abstract = {BACKGROUND:Mass spectrometry is an essential analytical technique for high-throughput analysis in proteomics and metabolomics. The development of new separation techniques, precise mass analyzers and experimental protocols is a very active field of research. This leads to more complex experimental setups yielding ever increasing amounts of data. Consequently, analysis of the data is currently often the bottleneck for experimental studies. Although software tools for many data analysis tasks are available today, they are often hard to combine with each other or not flexible enough to allow for rapid prototyping of a new analysis workflow.
+
+RESULTS:We present OpenMS, a software framework for rapid application development in mass spectrometry. OpenMS has been designed to be portable, easy-to-use and robust while offering a rich functionality ranging from basic data structures to sophisticated algorithms for data analysis. This has already been demonstrated in several studies.
+
+CONCLUSION:OpenMS is available under the Lesser GNU Public License (LGPL) from the project website at http://www.openms.de.},
+url = {http://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?dbfrom=pubmed&id=18366760&retmode=ref&cmd=prlinks},
+local-url = {file://localhost/Users/reinert/Dropbox/Library.papers3/Articles/2008/Bertsch/BMC%20Bioinformatics%202008%20Bertsch.pdf},
+file = {{BMC Bioinformatics 2008 Bertsch.pdf:/Users/reinert/Dropbox/Library.papers3/Articles/2008/Bertsch/BMC Bioinformatics 2008 Bertsch.pdf:application/pdf}},
+uri = {\url{papers3://publication/doi/10.1186/1471-2105-9-163}}
+}
+
+@article{doring_08_seqan,
+author = {D{\"o}ring, Andreas and Weese, David and Rausch, T and Reinert, Knut},
+title = {{SeqAn an efficient, generic C++ library for sequence analysis.}},
+journal = {BMC Bioinformatics},
+year = {2008},
+volume = {9},
+number = {1},
+pages = {11},
+publisher = {BioMed Central Ltd},
+affiliation = {Algorithmische Bioinformatik, Institut f{\"u}r Informatik, Takustr, 9, 14195 Berlin, Germany. doering@inf.fu-berlin.de},
+doi = {10.1186/1471-2105-9-11},
+pmid = {18184432},
+pmcid = {PMC2246154},
+language = {English},
+read = {Yes},
+rating = {0},
+date-added = {2009-11-24T15:28:08GMT},
+date-modified = {2015-11-22T18:55:27GMT},
+abstract = {BACKGROUND:The use of novel algorithmic techniques is pivotal to many important problems in life science. For example the sequencing of the human genome 1 would not have been possible without advanced assembly algorithms. However, owing to the high speed of technological progress and the urgent need for bioinformatics tools, there is a widening gap between state-of-the-art algorithmic techniques and the actual algorithmic components of tools that are in widespread use.
+
+RESULTS:To remedy this trend we propose the use of SeqAn, a library of efficient data types and algorithms for sequence analysis in computational biology. SeqAn comprises implementations of existing, practical state-of-the-art algorithmic components to provide a sound basis for algorithm testing and development. In this paper we describe the design and content of SeqAn and demonstrate its use by giving two examples. In the first example we show an application of SeqAn as an experimental platform by comparing different exact string matching algorithms. The second example is a simple version of the well-known MUMmer tool rewritten in SeqAn. Results indicate that our implementation is very efficient and versatile to use.
+
+CONCLUSION:We anticipate that SeqAn greatly simplifies the rapid development of new bioinformatics tools by providing a collection of readily usable, well-designed algorithmic components which are fundamental for the field of sequence analysis. This leverages not only the implementation of new algorithms, but also enables a sound analysis and comparison of existing algorithms.},
+url = {http://www.biomedcentral.com/1471-2105/9/11},
+local-url = {file://localhost/Users/reinert/Dropbox/Library.papers3/Articles/2008/oring/BMC%20Bioinformatics%202008%20oring.pdf},
+file = {{BMC Bioinformatics 2008 oring.pdf:/Users/reinert/Dropbox/Library.papers3/Articles/2008/oring/BMC Bioinformatics 2008 oring.pdf:application/pdf;BMC Bioinformatics 2008 oring.pdf:/Users/reinert/Dropbox/Library.papers3/Articles/2008/oring/BMC Bioinformatics 2008 oring.pdf:application/pdf}},
+uri = {\url{papers3://publication/doi/10.1186/1471-2105-9-11}}
+}
+
+@article{SchulzTrieglaff:2008gx,
+author = {Schulz-Trieglaff, Ole and Pfeifer, Nico and Gr{\"o}pl, Clemens and Kohlbacher, Oliver and Reinert, Knut},
+title = {{LC-MSsim--a simulation software for liquid chromatography mass spectrometry data.}},
+journal = {BMC Bioinformatics},
+year = {2008},
+volume = {9},
+pages = {423},
+affiliation = {International Max Planck Research School for Computational Biology and Scientific Computing, Berlin, Germany. trieglaf@inf.fu-berlin.de},
+doi = {10.1186/1471-2105-9-423},
+pmid = {18842122},
+pmcid = {PMC2577660},
+language = {English},
+read = {Yes},
+rating = {0},
+date-added = {2008-11-03T18:00:18GMT},
+date-modified = {2015-12-02T11:13:23GMT},
+abstract = {BACKGROUND:Mass Spectrometry coupled to Liquid Chromatography (LC-MS) is commonly used to analyze the protein content of biological samples in large scale studies. The data resulting from an LC-MS experiment is huge, highly complex and noisy. Accordingly, it has sparked new developments in Bioinformatics, especially in the fields of algorithm development, statistics and software engineering. In a quantitative label-free mass spectrometry experiment, crucial steps are the detection of peptide features in the mass spectra and the alignment of samples by correcting for shifts in retention time. At the moment, it is difficult to compare the plethora of algorithms for these tasks. So far, curated benchmark data exists only for peptide identification algorithms but no data that represents a ground truth for the evaluation of feature detection, alignment and filtering algorithms.
+
+RESULTS:We present LC-MSsim, a simulation software for LC-ESI-MS experiments. It simulates ESI spectra on the MS level. It reads a list of proteins from a FASTA file and digests the protein mixture using a user-defined enzyme. The software creates an LC-MS data set using a predictor for the retention time of the peptides and a model for peak shapes and elution profiles of the mass spectral peaks. Our software also offers the possibility to add contaminants, to change the background noise level and includes a model for the detectability of peptides in mass spectra. After the simulation, LC-MSsim writes the simulated data to mzData, a public XML format. The software also stores the positions (monoisotopic m/z and retention time) and ion counts of the simulated ions in separate files.
+
+CONCLUSION:LC-MSsim generates simulated LC-MS data sets and incorporates models for peak shapes and contaminations. Algorithm developers can match the results of feature detection and alignment algorithms against the simulated ion lists and meaningful error rates can be computed. We anticipate that LC-MSsim will be useful to the wider community to perform benchmark studies and comparisons between computational tools.},
+url = {http://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?dbfrom=pubmed&id=18842122&retmode=ref&cmd=prlinks},
+uri = {\url{papers3://publication/doi/10.1186/1471-2105-9-423}}
+}
+
+@article{Bauer:2008vj,
+author = {Bauer, M and Klau, Gunnar W and Reinert, Knut},
+title = {{An Exact Mathematical Programming Approach to Multiple RNA Sequence-Structure Alignment}},
+journal = {Algorithmic Operations Research},
+year = {2008},
+volume = {3},
+pages = {130--146},
+read = {Yes},
+rating = {0},
+date-added = {2008-11-17T09:46:24GMT},
+date-modified = {2015-11-24T06:38:52GMT},
+abstract = {...  An  Exact  Mathematical  Programming  Approach to Multiple  RNA  Sequence - Structure  Alignment Markus Bauer, Gunnar W. Klau, and Knut Reinert ... 1 Page 2. AN  EXACT  MATHEMATICAL PROGRAMMING  APPROACH TO MULTIPLE  RNA  SEQUENCE - STRUCTURE  ALIGNMENT  ...},
+url = {http://page.mi.fu-berlin.de/gunnar/pubs/mlara_AOR_preprint.pdf},
+local-url = {file://localhost/Users/reinert/Dropbox/Library.papers3/Articles/2008/Bauer/2008%20Bauer.pdf},
+file = {{2008 Bauer.pdf:/Users/reinert/Dropbox/Library.papers3/Articles/2008/Bauer/2008 Bauer.pdf:application/pdf}},
+uri = {\url{papers3://publication/uuid/F53CE52B-1DCE-4903-8656-4AC120353BE6}}
+}
+
+@article{Rausch:2008ws,
+author = {Rausch, T and Emde, A and Reinert, Knut},
+title = {{Robust consensus computation}},
+journal = {BMC Bioinformatics},
+year = {2008},
+volume = {9},
+number = {Suppl 10},
+pages = {P4},
+rating = {0},
+date-added = {2013-09-04T14:04:14GMT},
+date-modified = {2015-11-06T12:10:22GMT},
+abstract = { BMC Bioinformatics Open Access Poster presentation   computation Tobias * 1,2 , Anne-Katrin Emde 1,2 and Knut  2 },
+url = {http://www.biomedcentral.com/content/pdf/1471-2105-9-s10-p4.pdf},
+local-url = {file://localhost/Users/reinert/Dropbox/Library.papers3/Articles/2008/Rausch/BMC%20Bioinformatics%202008%20Rausch.pdf},
+file = {{BMC Bioinformatics 2008 Rausch.pdf:/Users/reinert/Dropbox/Library.papers3/Articles/2008/Rausch/BMC Bioinformatics 2008 Rausch.pdf:application/pdf}},
+uri = {\url{papers3://publication/uuid/BE347016-88AA-4642-81DC-E1EE604F9E2E}}
+}
+
+@article{SchulzTrieglaff:2008wp,
+author = {Schulz-Trieglaff, Ole and Hussong, Rene and Gr{\"o}pl, Clemens and Leinenbach, Andreas and Hildebrandt, Andreas and Huber, Christian and Reinert, Knut},
+title = {{Computational quantification of peptides from LC-MS data.}},
+journal = {Journal of Computational Biology},
+year = {2008},
+volume = {15},
+number = {7},
+pages = {685--704},
+affiliation = {International Max Planck Research School for Computational Biology and Scientific Computing, Department of Mathematics and Computer Science, Free University Berlin, Berlin, Germany. trieglaf@inf.fu-berlin.de},
+doi = {10.1089/cmb.2007.0117},
+pmid = {18707556},
+language = {English},
+rating = {0},
+date-added = {2010-09-15T07:26:08GMT},
+date-modified = {2015-11-06T12:10:15GMT},
+abstract = {Liquid chromatography coupled to mass spectrometry (LC-MS) has become a major tool for the study of biological processes. High-throughput LC-MS experiments are frequently conducted in modern laboratories, generating an enormous amount of data per day. A manual inspection is therefore no longer a feasible task. Consequently, there is a need for computational tools that can rapidly provide information about mass, elution time, and abundance of the compounds in a LC-MS sample. We present an algorithm for the detection and quantification of peptides in LC-MS data. Our approach is flexible and independent of the MS technology in use. It is based on a combination of the sweep line paradigm with a novel wavelet function tailored to detect isotopic patterns of peptides. We propose a simple voting schema to use the redundant information in consecutive scans for an accurate determination of monoisotopic masses and charge states. By explicitly modeling the instrument inaccuracy, we are also able to cope with data sets of different quality and resolution. We evaluate our technique on data from different instruments and show that we can rapidly estimate mass, centroid of retention time, and abundance of peptides in a sound algorithmic framework. Finally, we compare the performance of our method to several other techniques on three data sets of varying complexity.},
+url = {http://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?dbfrom=pubmed&id=18707556&retmode=ref&cmd=prlinks},
+local-url = {file://localhost/Users/reinert/Dropbox/Library.papers3/Articles/2008/Schulz-Trieglaff/Journal%20of%20Computational%20Biology%202008%20Schulz-Trieglaff.pdf},
+file = {{Journal of Computational Biology 2008 Schulz-Trieglaff.pdf:/Users/reinert/Dropbox/Library.papers3/Articles/2008/Schulz-Trieglaff/Journal of Computational Biology 2008 Schulz-Trieglaff.pdf:application/pdf;Journal of Computational Biology 2008 Schulz-Trieglaff.pdf:/Users/reinert/Dropbox/Library.papers3/Articles/2008/Schulz-Trieglaff/Journal of Computational Biology 2008 Schulz-Trieglaff.pdf:application/pdf}},
+uri = {\url{papers3://publication/doi/10.1089/cmb.2007.0117}}
+}
+
+@inproceedings{Weese:2008wj,
+author = {Schulz, Marcel H and Weese, David and Rausch, T and ring, A D o and Reinert, Knut and Vingron, Martin},
+title = {{Fast and adaptive variable order Markov Chain construction}},
+booktitle = {Proc. 8th International Workshop on Algorithms in Bioinformatics},
+year = {2008},
+pages = {306--317},
+publisher = {Springer-Verlag},
+read = {Yes},
+rating = {0},
+date-added = {2013-09-13T13:08:26GMT},
+date-modified = {2015-11-06T12:10:23GMT},
+abstract = { 73, 14195 Berlin, Germany {marcel. ,martin.vingron}@molgen.mpg.de 2 Department of  9, 14195 Berlin, Germany { ,rausch,doering, }@inf.fu },
+url = {http://www.springerlink.com/index/w786686m07554mw2.pdf},
+local-url = {file://localhost/Users/reinert/Dropbox/Library.papers3/Articles/2008/Schulz/2008%20Schulz.pdf},
+file = {{2008 Schulz.pdf:/Users/reinert/Dropbox/Library.papers3/Articles/2008/Schulz/2008 Schulz.pdf:application/pdf}},
+uri = {\url{papers3://publication/uuid/74AC9353-717D-46B7-8C48-4429267D54D7}}
+}

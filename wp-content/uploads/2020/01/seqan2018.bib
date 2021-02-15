@@ -1,0 +1,89 @@
+@article{fu_mi_publications2374,
+          author = {Anne Busch and Prasad Thomas and Eric Zuchantke and Holger Brendebach and Kerstin Neubert and Josephine Gruetzke and Sascha Al Dahouk and Martin Peters and Helmut Hotzel and Heinrich Neubauer and Herbert Tomaso},
+         journal = {Frontiers in Microbiology},
+          volume = {9},
+           month = {March},
+            year = {2018},
+           title = {Revisiting Francisella tularensis subsp. holarctica, Causative Agent of Tularemia in Germany With Bioinformatics: New Insights in Genome Structure, DNA Methylation and Comparative Phylogenetic Analysis},
+             url = {http://publications.imp.fu-berlin.de/2374/},
+        abstract = {Francisella (F.) tularensis is a highly virulent, Gram-negative bacterial pathogen and the causative agent of the zoonotic disease tularemia. Here, we generated, analyzed and characterized a high quality circular genome sequence of the F. tularensis subsp. holarctica strain 12T0050 that caused fatal tularemia in a hare. Besides the genomic structure, we focused on the analysis of oriC, unique to the Francisella genus and regulating replication in and outside hosts and the first report on genomic DNA methylation of a Francisella strain. The high quality genome was used to establish and evaluate a diagnostic whole genome sequencing pipeline. A genotyping strategy for F. tularensis was developed using various bioinformatics tools for genotyping. Additionally, whole genome sequences of F. tularensis subsp. holarctica isolates isolated in the years 2008?2015 in Germany were generated. A phylogenetic analysis allowed to determine the genetic relatedness of these isolates and confirmed the highly conserved nature of F. tularensis subsp. holarctica.}
+}
+@article{fu_mi_publications2282,
+          number = {17},
+         journal = {Bioinformatics},
+           month = {September},
+           title = {DREAM-Yara: an exact read mapper for very large databases with short update time},
+            year = {2018},
+          author = {Temesgen Hailemariam Dadi and Enrico Siragusa and Vitor C Piro and Andreas Andrusch and Enrico Seiler and Bernhard Y Renard and Knut Reinert},
+           pages = {i766--i772},
+          volume = {34},
+             url = {http://publications.imp.fu-berlin.de/2282/},
+        abstract = {Motivation
+
+Mapping-based approaches have become limited in their application to very large sets of references since computing an FM-index for very large databases (e.g. {\ensuremath{>}}10 GB) has become a bottleneck. This affects many analyses that need such index as an essential step for approximate matching of the NGS reads to reference databases. For instance, in typical metagenomics analysis, the size of the reference sequences has become prohibitive to compute a single full-text index on standard machines. Even on large memory machines, computing such index takes about 1 day of computing time. As a result, updates of indices are rarely performed. Hence, it is desirable to create an alternative way of indexing while preserving fast search times.
+
+Results
+
+To solve the index construction and update problem we propose the DREAM (Dynamic seaRchablE pArallel coMpressed index) framework and provide an implementation. The main contributions are the introduction of an approximate search distributor via a novel use of Bloom filters. We combine several Bloom filters to form an interleaved Bloom filter and use this new data structure to quickly exclude reads for parts of the databases where they cannot match. This allows us to keep the databases in several indices which can be easily rebuilt if parts are updated while maintaining a fast search time. The second main contribution is an implementation of DREAM-Yara a distributed version of a fully sensitive read mapper under the DREAM framework.
+
+Availability and implementation:
+https://gitlab.com/pirovc/dream\_yara/}
+}
+@article{fu_mi_publications2283,
+           month = {May},
+           title = {Formula Feeding Predisposes Neonatal Piglets to Clostridium difficile Gut Infection},
+            year = {2018},
+          number = {9},
+         journal = {The Journal of Infectious Diseases},
+          volume = {217},
+          author = {\L{}ukasz Grze{\'s}kowiak and Beatriz Mart{\'i}nez-Vallesp{\'i}n and Temesgen H Dadi and Judith Radloff and Salah Amasheh and Femke-Anouska Heinsen and Andre Franke and Knut Reinert and Wilfried Vahjen and J{\"u}rgen Zentek and Robert Pieper},
+           pages = {1442--1452},
+        abstract = {Spontaneous outbreaks of Clostridium difficile infection (CDI) occur in neonatal piglets, but the predisposing factors are largely not known. To study the conditions for C. difficile colonization and CDI development, 48 neonatal piglets were moved into isolators, fed bovine milk?based formula, and infected with C. difficile 078. Analyses included clinical scoring; measurement of the fecal C. difficile burden, toxin B level, and calprotectin level; and postmortem histopathological analysis of colon specimens. Controls were noninfected suckling piglets. Fecal specimens from suckling piglets, formula-fed piglets, and formula-fed, C. difficile?infected piglets were used for metagenomics analysis. High background levels of C. difficile and toxin were detected in formula-fed piglets prior to infection, while suckling piglets carried about 3-fold less C. difficile, and toxin was not detected. Toxin level in C. difficile?challenged animals correlated positively with C. difficile and calprotectin levels. Postmortem signs of CDI were absent in suckling piglets, whereas mesocolonic edema and gas-filled distal small intestines and ceca, cellular damage, and reduced expression of claudins were associated with animals from the challenge trials. Microbiota in formula-fed piglets was enriched with Escherichia, Shigella, Streptococcus, Enterococcus, and Ruminococcus species. Formula-fed piglets were predisposed to C. difficile colonization earlier as compared to suckling piglets. Infection with a hypervirulent C. difficile ribotype did not aggravate the symptoms of infection. Sow-offspring association and consumption of porcine milk during early life may be crucial for the control of C. difficile expansion in piglets.},
+             url = {http://publications.imp.fu-berlin.de/2283/}
+}
+@article{fu_mi_publications2284,
+           month = {April},
+           title = {Optimum Search Schemes for Approximate String Matching Using Bidirectional FM-Index},
+            year = {2018},
+       booktitle = {Optimum Search Schemes for Approximate String Matching Using Bidirectional FM-Index},
+          author = {Kiavash Kianfar and Christopher Pockrandt and Bahman Torkamandi and Haochen Luo and Knut Reinert},
+         journal = {bioRxiv, The Preprint Server for Biology},
+             url = {http://publications.imp.fu-berlin.de/2284/},
+        abstract = {Finding approximate occurrences of a pattern in a text using a full-text index is a central problem in bioinformatics and has been extensively researched. Bidirectional indices have opened new possibilities in this regard allowing the search to start from anywhere within the pattern and extend in both directions. In particular, use of search schemes (partitioning the pattern and searching the pieces in certain orders with given bounds on errors) can yield significant speed-ups. However, finding optimal search schemes is a difficult combinatorial optimization problem. Here for the first time, we propose a mixed integer program (MIP) capable to solve this optimization problem for Hamming distance with given number of pieces. Our experiments show that the optimal search schemes found by our MIP significantly improve the performance of search in bidirectional FM-index upon previous ad-hoc solutions. For example, approximate matching of 101-bp Illumina reads (with two errors) becomes 35 times faster than standard backtracking. Moreover, despite being performed purely in the index, the running time of search using our optimal schemes (for up to two errors) is comparable to the best state-of-the-art aligners, which benefit from combining search in index with in-text verification using dynamic programming. As a result, we anticipate a full-fledged aligner that employs an intelligent combination of search in the bidirectional FM-index using our optimal search schemes and in-text verification using dynamic programming outperforms today's best aligners. The development of such an aligner, called FAMOUS (Fast Approximate string Matching using OptimUm search Schemes), is ongoing as our future work.}
+}
+@article{fu_mi_publications1981,
+           pages = {118--135},
+          author = {T. Marschall and K. Reinert and (59 authors in total) others},
+          volume = {19},
+          number = {1},
+         journal = {Briefings in Bioinformatics},
+            year = {2018},
+           title = {Computational pan-genomics: status, promises and challenges},
+           month = {January},
+       publisher = {Oxford University Press},
+        abstract = {Many disciplines, from human genetics and oncology to plant breeding, microbiology and virology, commonly face the challenge of analyzing rapidly increasing numbers of genomes. In case of Homo sapiens, the number of sequenced genomes will approach hundreds of thousands in the next few years. Simply scaling up established bioinformatics pipelines will not be sufficient for leveraging the full potential of such rich genomic data sets. Instead, novel, qualitatively different computational methods and paradigms are needed. We will witness the rapid extension of computational pan-genomics, a new sub-area of research in computational biology. In this article, we generalize existing definitions and understand a pan-genome as any collection of genomic sequences to be analyzed jointly or to be used as a reference. We examine already available approaches to construct and use pan-genomes, discuss the potential benefits of future technologies and methodologies and review open challenges from the vantage point of the above-mentioned biological disciplines. As a prominent example for a computational paradigm shift, we particularly highlight the transition from the representation of reference genomes as strings to representations as graphs. We outline how this and other challenges from different application domains translate into common computational problems, point out relevant bioinformatics techniques and identify open problems in computer science. With this review, we aim to increase awareness that a joint approach to computational pan-genomics can help address many of the problems currently faced in various domains.},
+             url = {http://publications.imp.fu-berlin.de/1981/}
+}
+@article{fu_mi_publications2253,
+            year = {2018},
+           title = {Generic accelerated sequence alignment in SeqAn using vectorization and multi-threading},
+           month = {October},
+       publisher = {Oxford Academic (OUP)},
+          number = {20},
+         journal = {Bioinformatics},
+          volume = {34},
+           pages = {3437--3445},
+          author = {Ren{\'e} Rahn and Stefan Budach and Pascal Costanza and Marcel Ehrhardt and Jonny Hancox and Knut Reinert},
+        abstract = {Motivation
+
+Pairwise sequence alignment is undoubtedly a central tool in many bioinformatics analyses. In this paper, we present a generically accelerated module for pairwise sequence lignments applicable for a broad range of applications. In our module, we unified the standard dynamic programming kernel used for pairwise sequence alignments and extended it with a generalized inter-sequence vectorization layout, such that many alignments can be computed simultaneously by exploiting SIMD (Single Instruction Multiple Data) instructions of modern processors. We then extended the module by adding two layers of thread-level parallelization, where we a) distribute many independent alignments on multiple threads and b) inherently parallelize a single alignment computation using a work stealing approach producing a dynamic wavefront progressing along the minor diagonal.
+
+Results
+
+We evaluated our alignment vectorization and parallelization on different processors, including the newest Intel? Xeon? (Skylake) and Intel? Xeon Phi? (KNL) processors, and use cases. The instruction set AVX512-BW (Byte and Word), available on Skylake processors, can genuinely improve the performance of vectorized alignments. We could run single alignments 1600 times faster on the Xeon Phi? and 1400 times faster on the Xeon? than executing them with our previous sequential alignment module.
+
+Availability
+
+The module is programmed in C++ using the SeqAn (Reinert et al., 2017) library and distributed with version 2.4. under the BSD license. We support SSE4, AVX2, AVX512 instructions and included UME::SIMD, a SIMD-instruction wrapper library, to extend our module for further instruction sets. We thoroughly test all alignment components with all major C++ compilers on various platforms.},
+             url = {http://publications.imp.fu-berlin.de/2253/}
+}
