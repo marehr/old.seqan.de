@@ -1,0 +1,207 @@
+/*
+Theme Name: Seqan
+Description: Child theme for Avada theme
+Author: Alessandro Massobrio
+Author URI: http://abstract-technology.com/
+Template: Avada
+Version: 1.0.0
+Text Domain:  Avada
+*/
+
+body {color: #333 !important; line-height: 2 !important;}
+.sb-toggle-wrapper {display: none;}
+
+h1 {font-weight: bold !important;}
+h2 {text-transform: uppercase;}
+h2.entry-title {display: none;}
+h3 {line-height: 20px !important; margin-bottom: 5px !important;}
+.heading h4 {text-transform: uppercase; font-size: 18px !important; width: 250px;}
+.post-content h4 {font-weight: 400 !important;}
+
+pre {background: #f8f8f8; padding: 15px;}
+
+/* Row fix internal (ARCHIVES) */
+.views-row {margin: 0 auto; max-width: 960px;}
+
+.fusion-main-menu > ul > li > a:hover, .fusion-main-menu .current-menu-ancestor > a, .fusion-main-menu .current-menu-item > a, .fusion-main-menu .current-menu-parent > a, .fusion-main-menu .current_page_item > a {color: #333 !important; border-color: #fede09;}
+
+#wrapper .side-nav li.current_page_item a {border-right-color: #fede09 !important; border-left-color: #fede09 !important; color: #fede09 !important;}
+#wrapper .side-nav li a:hover {background: #fede09; color: white !important;}
+#wrapper .side-nav li a {padding-left: 10px;}
+#sidebar > ul > li:nth-child(1) {display: none;}
+
+ul.side-nav li.page_item a.active {border-right-color: #fede09; border-left-color: #fede09; border-right: 3px solid #fede09 !important; color: #fede09 !important;}
+
+.post-content p a:hover {background-color: #fede09; color: #333 !important;}
+
+/* Col tweaks */
+@media screen and (min-width: 992px) 
+{
+.col-lg-4, .col-md-4, .col-sm-4, .fusion-one-third {padding-left: 0 !important; padding-right: 30px !important;}
+}
+.col-md-offset-2 {padding: 0 15px;}
+
+/* Buttons */
+.fusion-button.button-lightgray, .fusion-button.button-lightgray.wpcf7-submit, .button.lightgray {background: #fbfbfb; background-image: linear-gradient(to top, #f0f0f0, #fbfbfb); border: 1px solid #fede09; background-image: linear-gradient(to top, #fede09, #fede09); color: #fff;}
+.fusion-button.button-lightgray:hover, .fusion-button.button-lightgray.wpcf7-submit:hover, .button.lightgray:hover, .fusion-button.button-lightgray:focus, .fusion-button.button-lightgray.wpcf7-submit:focus, .button.lightgray:focus, .fusion-button.button-lightgray:active, .fusion-button.button-lightgray.wpcf7-submit:active, .button.lightgray:active {background: #fbfbfb; background-image: linear-gradient(to top, #ccc, #ccc); border: 1px solid #ccc; background-image: linear-gradient(to top, #ccc, #ccc);}
+.fusion-button.button-lightgray.button-2 {background: #fbfbfb; background-image: linear-gradient(to top, #eaeaea, #eaeaea); border: 1px solid #eaeaea; background-image: linear-gradient(to top, #eaeaea, #eaeaea); color: #fff;}
+.fusion-button.button-lightgray.button-2:hover {background: #fbfbfb; background-image: linear-gradient(to top, #fede09, #fede09); border: 1px solid #fede09; background-image: linear-gradient(to top, #fede09, #fede09); color: #fff;}
+#main .comment-submit, #reviews input#submit, .button-default, .button.default, .comment-form input[type="submit"], .fusion-button-default, .fusion-portfolio-one .fusion-button, .ticket-selector-submit-btn[type=submit], .wpcf7-form input[type="submit"], .wpcf7-submit {background: #fede09 !important; color: #333 !important;}
+
+/* Icons */
+/* getting started */
+.fa-newuser:before {content: ""; background: url("../../uploads/2016/01/ico-newuser.png") no-repeat 0 0 transparent; width: 48px; margin: 0 auto; height: 48px; transform: translateY(50%); display: list-item;}
+.fa-seqanuser:before {content: ""; background: url("../../uploads/2016/01/ico-seqanuser.png") no-repeat 0 0 transparent; width: 48px; margin: 0 auto; height: 48px; transform: translateY(50%); display: list-item;}
+
+/* HP */
+.fa-glass-martini:before {content: "" !important; background: url("../../uploads/2016/01/ico-structures.png") no-repeat 0 0 transparent !important; width: 41px; margin: 0 auto; height: 96px; transform: translateY(0%); display: block;}
+.fa-search:before {content: "" !important; background: url("../../uploads/2016/01/ico-parallelization.png") no-repeat 0 0 transparent !important; width: 48px; margin: 0 auto; height: 48px; transform: translateY(50%); display: block;}
+.fa-envelope:before {content: "" !important; background: url("../../uploads/2016/01/ico-io.png") no-repeat 0 0 transparent !important; width: 48px; margin: 0 auto; height: 54px; transform: translateY(50%); display: block;}
+.fa-heart:before {content: "" !important; background: url("../../uploads/2016/01/ico-apps.png") no-repeat 0 0 transparent !important; width: 48px; margin: 0 auto; height: 85px; transform: translateY(0%); display: block;}
+.fa-star:before {content: "" !important; background: url("../../uploads/2016/01/ico-workflows.png") no-repeat 0 0 transparent !important; width: 48px; margin: 0 auto; height: 48px; transform: translateY(50%); display: block;}
+
+.fusion-sharing-box .fusion-social-networks .fusion-social-network-icon {margin: 0 10px 0px 0px !important;}
+.fusion-sharing-box h4 {font-size: 22px !important; font-weight: 400; text-align: right; font-style: italic;}
+a.fusion-social-network-icon {background: #fede09; padding: 10px;}
+a.fusion-social-network-icon:before {color: #222 !important;}
+
+i {border-color: #fede09; background-color: #fede09; border-radius: 5px}
+.n-ico i {border-color: #fede09 !important; background-color: #fede09 !important;}
+.n-ico-archive i {border-color: transparent !important; background-color: transparent!important; float: right;}
+
+/* NAV */
+.fusion-main-menu > ul > li > a {text-transform: uppercase;}
+
+/* Title Bar */
+.fusion-page-title-bar {border: none !important; height: 81px !important; background-size: cover;}
+.fusion-page-title-bar-right .fusion-page-title-captions {text-transform: uppercase;}
+.fusion-page-title-captions {text-transform: uppercase;}
+
+/* SLIDER */
+.slide-content h2 {text-transform: inherit !important;}
+.c-area {color: #fede09; font-size: 34px; clear: both; line-height: 32px; margin: 0 0 15px 0;}
+@media screen and (min-width:920px) {
+    .caption h3 {max-width: 50%; line-height: 22px !important;}
+}
+
+/* general selectors */
+.line-height {line-height: 2.1 !important;}
+
+/* Accordion*/
+.fusion-accordian .panel-title a .fa-fusion-box {width: 32px !important; height: 32px !important; line-height: 32px !important;}
+.accordian .fusion-accordian i, .fusion-accordian i.fa-fusion-box {background: transparent !important; border: 1px solid #fede09 !important; border-radius: 0;}
+.accordian .fusion-accordian i.fa-2x {background: #fede09 !important;}
+.fusion-accordian .people .panel-title a:hover .fa-fusion-box {background: transparent !important; border-color: #fede09 !important;}
+.fusion-accordian .panel-title .active .fa-fusion-box {background: #fede09 !important;}
+.fusion-accordian .panel-title .active .fa-fusion-box:before {color: white !important;}
+.fusion-accordian .panel-title a .fa-fusion-box:before {color: #fede09 !important;}
+.fusion-accordian .panel-title a:hover .fa-fusion-box {background: #fede09 !important;}
+.fusion-accordian .panel-title a:hover .fa-fusion-box:before {color: white !important}
+.fusion-accordian .fusion-social-network-icon:before {color: #333 !important;}
+
+/* Date */
+.fusion-date-box {background-color: #fede09 !important; text-transform: uppercase; font-weight: 500;}
+.fusion-date-and-formats .fusion-date-box {padding: 30px 0 60px 0;}
+.fusion-date, .fusion-month-year {position: relative;}
+.fusion-month-year {font-size: 22px; font-weight: lighter;}
+.fusion-date {font-size: 50px !important; font-weight: 500 !important; padding: 0 0 0; z-index: 999; position: relative; top: 15px;}
+.fusion-date-and-formats-top .fusion-date {top: 0px;}
+
+/* HOME */
+.content-boxes .col {margin: 0 auto; border: 1px solid #fede09; padding: 40px 10px !important;}
+body.home .content-boxes .col {height: 325px; padding: 40px 15px !important;}
+.fusion-content-boxes .heading {margin-bottom: 0 !important;}
+.fusion-testimonials.classic .testimonial-image {max-width: 80px; position: relative; top: 15px; -webkit-border-radius:50%; -moz-border-radius:50%; border-radius:50%;}
+.wpv_pagination_dots {float: right;}
+.fusion-testimonials {/*padding: 0 35px;*/}
+.fusion-testimonials blockquote q p {margin-bottom: 0 !important;}
+.fusion-testimonials.classic blockquote {background: transparent !important; border: 1px solid #fede09 !important;}
+.fusion-testimonials.classic blockquote q {background: transparent !important; line-height: 2;}
+.fusion-testimonials.classic blockquote p:before {content: "“"; font-size: 42px; line-height: 0; vertical-align: top; padding-right: 10px;}
+.fusion-testimonials.classic blockquote p:after {content: "”"; font-size: 42px; line-height: 0; vertical-align: bottom; padding-left: 10px;}
+.fusion-testimonials.classic .testimonial-thumbnail {color: #b0b0b0 !important;}
+.fusion-testimonials .male .doe:before, .fusion-testimonials .female .doe:before {font-size: 80px; line-height: 100px !important;}
+.fusion-testimonials.classic .author:after {background: url("../../uploads/2015/12/triangle-testimonial.png") 10px 0 no-repeat; width: 42px; height: 47px; position: absolute; z-index: 9999; top: -11px; border-top-color: transparent;}
+#q-facts {margin-bottom: 0 !important;}
+
+/* NEWS */
+.single-post .fusion-post-slideshow {display: none !important;}
+.news .fusion-date-and-formats {float:none; width: 100%;}
+.n-wrapper {border: 1px solid #fede09; padding: 15px;}
+.n-wrapper h2 {clear: both;}
+.n-ico {width: 115px; margin: -85px auto 25px auto;}
+.n-ico i {font-family: FontAwesome; color: white; font-size: 0; font-style: normal; font-weight: lighter; margin: 0
+auto; border-radius: 50%; text-align: center; padding: 18px 0; position: relative; float: left; width: 100%; height:
+115px; margin-bottom: 15px; z-index: -1}
+i.a:before {/*! content: ""; */ /*! background: url("/wp-content/uploads/2016/01/ico-newcode.png") no-repeat 0 0 transparent; */ /*! width: 48px; */ /*! margin: 0 auto; */ /*! height: 51px; */ /*! transform: translateY(50%); */ /*! display: list-item; */ /*! position: relative; */}
+i.b:before {/*content: ""; background: url("/wp-content/uploads/2016/01/ico-grant.png") no-repeat 0 0 transparent;
+width: 48px; margin: 0 auto; height: 47px; transform: translateY(50%); display: list-item; position: relative;*/}
+i.c:before {/*content: ""; background: url("/wp-content/uploads/2016/01/ico-meeting.png") no-repeat 0 0 transparent;
+width: 48px; margin: 0 auto; height: 51px; transform: translateY(50%); display: list-item; position: relative;*/}
+i.d:before {/*content: ""; background: url("/wp-content/uploads/2016/01/ico-pubblication.png") no-repeat 0 0
+transparent; width: 48px; margin: 0 auto; height: 48px; transform: translateY(50%); display: list-item; position:
+relative;*/}
+i.e:before {/*content: ""; background: url("/wp-content/uploads/2016/01/ico-other.png") no-repeat 0 0 transparent;
+width: 48px; margin: 0 auto; height: 48px; transform: translateY(50%); display: list-item; position: relative;*/}
+.n-ico-archive i {font-family: FontAwesome; color: #eaeaea; font-size: 24px; font-style: normal; font-weight: lighter; margin: 0 auto;}
+.n-ico-archive i.a:before {content:"\f00d"; position: relative;}
+.n-ico-archive i.b:before {content:"\f00d"; position: relative;}
+.n-ico-archive i.c:before {content:"\f00d"; position: relative;}
+.n-ico-archive i.d:before {content:"\f00d"; position: relative;}
+
+/* Banner */
+.banner {margin: -77px 0;}
+
+/* PEOPLE */
+.group .fusion-toggle-heading {font-weight: bold;}
+.people img, img.people {border-radius: 50%;}
+.email a:hover {background: #fede09;}
+.social a {padding: 0 5px;}
+.fusion-accordian .panel-title .fusion-toggle-icon-wrapper {float: right;}
+.fusion-accordian {padding: 15px 0;}
+h2.panel-group {float: left; top: 10px; position: relative;}
+.fusion-accordian .panel-title .fusion-toggle-heading {font-size: 32px; margin-left: 0;}
+.button-full-width {width: 100% !important; color: #333 !important;}
+.n-a-top {border-top: 5px solid #b0b0b0;}
+.fusion-accordian .panel-title a .fa-fusion-box:before {line-height: 30px !important; font-size: 20px !important;}
+
+/* PUBLICATIONS */
+body.page-id-12116 table {display: none;}
+h3.papercite {font-size: 34px !important; margin-bottom: 35px !important; font-family: "Lato" !important}
+ul.papercite_bibliography li {font-size: 20px !important; font-family: "Lato" !important}
+code.tex.bibtex {font-size: 12px !important;}
+
+/* APPLICATIONS */
+ul.side-nav li.page_item a {display: inherit;}
+.app-archive-last {float: left;}
+body.single-apps .single-navigation, body.single-publication .single-navigation {display: none;}
+
+/* Contact (widget) */
+.sidebar .widget .heading .widget-title, .sidebar .widget .widget-title {font-size: 24px; font-weight: bold;}
+body.page-id-12316 .fusion-fullwidth {padding: 0 0 50px 0 !important;}
+body.page-id-12316 #content.full-width {margin-top: -50px !important;}
+
+/* Breadcrumbs */
+body.page-id-11965 .breadcrumbs {display: none;}
+@media only screen and (min-width: 800px) 
+{
+    .breadcrumbs {top: -50px; position: relative; font-size: smaller; z-index: 999; width: 960px; margin: 0 auto; text-align: right;}
+}
+@media only screen and (max-width: 799px) 
+{
+    .breadcrumbs {display: none;}
+}
+body.home .breadcrumbs {display: none;}
+.fusion-page-title-bar-right .fusion-page-title-captions {text-align: left;}
+
+/* Footer */
+.fusion-footer input[type="text"], .fusion-footer input[type="password"] {color: white !important; background: transparent !important; border-color: white !important; height: 35px; width: 100% !important;}
+.fusion-footer input[type="submit"] {margin-top: 15px; float: right; background: #fede09; border: #fede09; padding: 10px 30px; text-transform: uppercase;}
+.fusion-footer-copyright-area {background: #fede09 !important;}
+.fusion-copyright-notice, .fusion-copyright-notice a, .fusion-copyright-notice a:hover {color: #333 !important;}
+.fusion-social-networks .fusion-social-network-icon:before {color: #fede09;}
+.fusion-footer-widget-area ul li a { border-bottom: 0px}
+.fusion-footer-widget-area .widget_categories li a { border-bottom: 0px}
+
+/* BKND TWEAKS */
+body.views_page_views-editor .toolset-help-content {display: none;}

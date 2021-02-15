@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Svenja Mehringer &#8211; Seqan</title>
+	<atom:link href="https://www.seqan.de/author/svenja-mehringer/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.seqan.de</link>
+	<description></description>
+	<lastBuildDate>Fri, 16 Dec 2016 13:29:35 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.6.1</generator>
+
+<image>
+	<url>https://www.seqan.de/wp-content/uploads/2020/11/cropped-seqan_logo_4-2-32x32.png</url>
+	<title>Svenja Mehringer &#8211; Seqan</title>
+	<link>https://www.seqan.de</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>SEQAN 2.3 RELEASED</title>
+		<link>https://www.seqan.de/seqan-2-3-released/</link>
+		
+		<dc:creator><![CDATA[Svenja Mehringer]]></dc:creator>
+		<pubDate>Fri, 16 Dec 2016 13:29:35 +0000</pubDate>
+				<category><![CDATA[News]]></category>
+		<guid isPermaLink="false">http://www.seqan.de/?p=12671</guid>
+
+					<description><![CDATA[We are pleased to announce the release of version 2.3 of the SeqAn library and updated versions of the official SeqAn-based applications. Major advancements have been accomplished in the area of Input and Output, e.g. we now support I/O of RNA structure files like Vienna or Stockholm and we included handling of new fields in Blast [...]]]></description>
+										<content:encoded><![CDATA[<p>We are pleased to announce the release of version 2.3 of the SeqAn library and updated versions of the official SeqAn-based applications.</p>
+<p>Major advancements have been accomplished in the area of Input and Output, e.g. we now support I/O of RNA structure files like Vienna or Stockholm and we included handling of new fields in Blast files.  We further improved our bidirectional FM-Index by substantially reducing the memory footprint and we put much effort into a detailed documentation. Additionally, the SeqAn command line parser will now inform application users whenever a new version of their app is available. This requires a ping to our servers which can be disabled either at run-time or at compile time if this is a concern to you (see our <a href="http://seqan.readthedocs.io/en/master/">manual</a> for further details).</p>
+<p>Besides new features, we addressed various issues that were kindly reported to us on Github. Of some interest might be the adaption of format changes in GFF/GTF, Bam and VCF files, the enforcement of container-types for the find module of indices, and the allowance of larger data in the graph module due to a non-recurse reimplementation of the depth-first-search.</p>
+<p>Infrastructural changes include some improvements to CMake and PkgConfig file. SeqAn now switched to the &#8220;Config“ mode for detecting SeqAn, which is the proper form of detecting external libraries. This means that we now ship SeqAn with a &#8220;seqan-config.cmake&#8221; instead of a &#8220;FindSeqan.cmake“ file. In general this might not affect your cmake-based project at all. But in case you experience any issues you can read more about the implications in the official API documentation of the <a href="https://cmake.org/cmake/help/v3.0/command/find_package.html">find_package function</a>.</p>
+<p>SeqAn is now also tested for various non-x86 CPU architectures including arm, mips, powerpc and sparc. And it even works on GNU/Hurd! Thanks to the Debian med team for their contributions.</p>
+<p>All publicly documented interfaces are preserved and no supported platforms where dropped. It is our policy that this shall not happen in the 2.x cycle anymore at all so you can trust that your applications work with the next releases.</p>
+<p>Further links:</p>
+<ul>
+<li><a href="https://github.com/seqan/seqan/blob/master/CHANGELOG.rst" target="_blank">Full Changelog</a></li>
+<li><a href="http://packages.seqan.de/" target="_blank">Downloads</a> (also applications)</li>
+<li><a href="https://www.seqan.de" target="_blank">Homepage</a></li>
+</ul>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

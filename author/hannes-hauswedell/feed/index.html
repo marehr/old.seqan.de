@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Hannes Hauswedell &#8211; Seqan</title>
+	<atom:link href="https://www.seqan.de/author/hannes-hauswedell/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.seqan.de</link>
+	<description></description>
+	<lastBuildDate>Wed, 18 Mar 2020 10:56:21 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.6.1</generator>
+
+<image>
+	<url>https://www.seqan.de/wp-content/uploads/2020/11/cropped-seqan_logo_4-2-32x32.png</url>
+	<title>Hannes Hauswedell &#8211; Seqan</title>
+	<link>https://www.seqan.de</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Announcing SeqAn3</title>
+		<link>https://www.seqan.de/announcing-seqan3/</link>
+		
+		<dc:creator><![CDATA[Hannes Hauswedell]]></dc:creator>
+		<pubDate>Thu, 06 Jun 2019 18:25:43 +0000</pubDate>
+				<category><![CDATA[News]]></category>
+		<guid isPermaLink="false">http://www.seqan.de/?p=12735</guid>
+
+					<description><![CDATA[We are excited to announce version 3 of the SeqAn library. It has been many years in the making and is the largest change in the development history of SeqAn. SeqAn3 is in fact an entirely new library! Get it while it's hot: https://github.com/seqan/seqan3 Read our new documentation: http://docs.seqan.de/seqan/3-master-user/ What's new? The design goals of [...]]]></description>
+										<content:encoded><![CDATA[<p><strong>We are excited to announce version 3 of the SeqAn library. It has been many years in the making and is the largest change in the development history of SeqAn. SeqAn3 is in fact an entirely new library!</strong></p>
+<p><strong>Get it while it&#8217;s hot:</strong> <a href="https://github.com/seqan/seqan3" rel="noopener noreferrer" target="_blank">https://github.com/seqan/seqan3</a><br />
+<strong>Read our new documentation:</strong> <a href="http://docs.seqan.de/seqan/3-master-user/" rel="noopener noreferrer" target="_blank">http://docs.seqan.de/seqan/3-master-user/</a></p>
+<h2>What&#8217;s new?</h2>
+<p>The design goals of SeqAn3 remain the same as for SeqAn1 and SeqAn2: be a <strong>fast, efficient, extensible C++ header library</strong> for sequence analysis. But the core design patterns for achieving these goals have changed significantly. SeqAn3 embraces &#8220;Modern C++&#8221; fully, i.e. the entire library is designed to make use of recent developments in the C++ language and standard library. In some cases we have decided to rely on third party libraries so that we don&#8217;t have to reinvent the wheel where existing solutions are already well-proven. This allows us to replace many of the more technical (and partly obscure) implementation details with existing code and focus our work on the actual algorithms and data structures that we need to solve biological problems.</p>
+<p>As part of this strategy shift we are announcing a <strong>cooperation with the Succinct Data Structure Library</strong> (<a href="https://github.com/simongog/sdsl-lite">SDSL</a>), of which version 3 is a hard requirement for using SeqAn3. The SDSL provides highly optimised data structures, including (compressed) bitvectors and FM indexes. To ease integration and redistribution together with SeqAn3, the SDSL has changed their license from the LGPL to MIT and is now also a header-only library. SeqAn project members are now main contributors to the SDSL. More on the changes in the SDSL will be announced through their respective channels soon.</p>
+<p>Regarding <strong>Modern C++</strong>: SeqAn3 is built on the C++17 standard and parts of the upcoming C++20 standard, including C++ Concepts and C++ Ranges. SeqAn3 is modeled strongly after the standard library, adopting many of its design patterns and code style. It is inspired by many state-of-the-art libraries like <a href="https://github.com/ericniebler/range-v3/" rel="noopener noreferrer" target="_blank">range-v3</a> and <a href="https://abseil.io/" rel="noopener noreferrer" target="_blank">abseil</a>; and it follows many C++ paradigms and best-practices developed in recent years. This results in a much <strong>cleaner, smaller and safer code base</strong>, that is easier to develop, read and maintain. We have put extra effort in providing extensive documentation, in fact there are more lines of documentation than lines of code.</p>
+<p><strong>C++ Concepts</strong> allow us to move away from &#8220;template subclassing&#8221; (the mechanism used for polymorphism in SeqAn2) and enables us to use data types from outside our library as first class citizens. As a developer using SeqAn this means you finally get readable error messages when misusing an interface and you can safely <strong>use the STL&#8217;s containers or your own datatypes</strong> without any wrappers or glue involved (as long as these types model the respective concepts).</p>
+<p><strong>C++ Ranges</strong> on the other hand generalise the notion of iterable objects (like containers) to types that perform certain algorithms when being iterated over. Since we deal with biological <em>sequences</em> in almost all contexts, this has a huge impact on data handling. In SeqAn3 you can create <em>views</em> on sequences that revert, complement, truncate or trim the underlying sequence without copying any data. You can even create the six-frame protein translation of a nucleotide sequence as a view that appears just like if you had generated all frames while in fact symbols are always generated on-demand and never use up memory.<br />
+Files are also ranges in SeqAn3 and even algorithms, like the pairwise sequence alignment, return a dynamic range of the results that are generated while you iterate over them. </p>
+<h2>Some Examples</h2>
+<p><strong>Complement and translate a sequence without copying any data:</strong></p>
+<pre>
+std::vector<dna5> vec{"ACGTACGTACGTA"_dna5};
+// pipe the vector through two view adaptors:
+auto v = vec | view::complement | view::translate_single; 
+// v is a view of length 4, accessing the elements on-demand will return <div class="fusion-fullwidth fullwidth-box fusion-builder-row-1 hundred-percent-fullwidth non-hundred-percent-height-scrolling"  style='background-color: rgba(255,255,255,0);background-position: center center;background-repeat: no-repeat;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;'><div class="fusion-builder-row fusion-row "><div  class="fusion-layout-column fusion_builder_column fusion_builder_column_1_1 fusion-builder-column-0 fusion-one-full fusion-column-first fusion-column-last fusion-column-no-min-height 1_1"  style='margin-top:0px;margin-bottom:0px;'><div class="fusion-column-wrapper" style="background-position:left top;background-repeat:no-repeat;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;"   data-bg-url="">[C,M,H,A]
+</pre>
+<p><strong>Read a FastA file and print the entries:</strong></p>
+<pre>
+sequence_file_input fin{"my.fasta"};
+// iterate over every record in the file and split it into fields:
+for (auto & [ seq, id, qual ] : fin)
+{
+    // print the fields:
+    debug_stream << "ID:  " << id << '\n';
+    debug_stream << "SEQ: " << seq << '\n';
+    debug_stream << "QUAL:" << qual << '\n'; // qual is empty for FastA files
+}
+</pre>
+<p><strong>File format conversion in one line:</strong></p>
+<pre>
+sequence_file_input{"input.fastq"} | sequence_file_output{"output.fasta"};
+// no variables are created here, all input is immediately streamed to the output
+// the format is converted on-the-fly
+</pre>
+<h2>(Before you) Get started</h2>
+<p>We believe SeqAn3 will lower the bar for writing bioinformatics applications in C++ significantly, and that the overall experience will be much improved for all developers and users of the library. However we want to point out early on that:</p>
+<ul>
+<li>It will require substantial work to port applications from SeqAn2 to SeqAn3, because SeqAn3 is an entirely new library.</li>
+<li>The initial release does not contain all the features of SeqAn2; many will be added in the next months, but likely not all.</li>
+<li>Due to relying on very Modern C++, we currently only support the GCC compiler in version 7 or newer. Experimental Clang support is being worked on; but it will likely be another year or two before Visual Studio can build apps made with SeqAn3.</li>
+<li>The first API stable release will be SeqAn-3.1.0, i.e. interfaces in the 3.0 release might change slightly (although we try to avoid it).</li>
+</ul>
+<p><strong>Follow the development (and star us!) on GitHub:</strong> <a href="https://github.com/seqan/seqan3" rel="noopener noreferrer" target="_blank">https://github.com/seqan/seqan3</a><br />
+<strong>Do the beginner tutorial:</strong> <a href="http://docs.seqan.de/seqan/3-master-user/usergroup1.html" rel="noopener noreferrer" target="_blank">http://docs.seqan.de/seqan/3-master-user/usergroup1.html</a><div class="fusion-clearfix"></div></div></div></div></div></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>SeqAn 2.4 released</title>
+		<link>https://www.seqan.de/seqan-2-4-released/</link>
+		
+		<dc:creator><![CDATA[Hannes Hauswedell]]></dc:creator>
+		<pubDate>Fri, 02 Feb 2018 20:00:17 +0000</pubDate>
+				<category><![CDATA[News]]></category>
+		<guid isPermaLink="false">http://www.seqan.de/?p=12732</guid>
+
+					<description><![CDATA[We are pleased to announce the release of version 2.4 of the SeqAn library and updated versions of the official SeqAn-based applications. The alignment module has received significant updates and a parallised interface. Beyond simple multi-threading the alignment module can utilise the vector extensions of modern CPUs (SSE4, AVX2, AVX512) resulting in very impressive speed-ups, [...]]]></description>
+										<content:encoded><![CDATA[<p>We are pleased to announce the release of version 2.4 of the SeqAn library and updated versions of the official SeqAn-based applications.</p>
+<p>The alignment module has received significant updates and a parallised interface. Beyond simple multi-threading the alignment module can utilise the vector extensions of modern CPUs (SSE4, AVX2, AVX512) resulting in very impressive speed-ups, especially on long sequences. In fact speed-ups of ~2000x over the serial case have been measured (AVX512 and 40 threads VS no vectorisation and one thread). The details are due to be published soon.</p>
+<p>The indexing module now also offers a parallelised interface which distributes multiple searches over the available CPU cores. Furthermore &#8220;optimal search schemes&#8221; can now be used for performing even faster searches with multiple errors. A preprint documenting these algorithms is available here:<br />
+<a href="https://arxiv.org/abs/1711.02035" rel="noopener" target="_blank">https://arxiv.org/abs/1711.02035</a></p>
+<p>The ReducedAminoAcid module now offers more reductions based on more recent research and VCF I/O is now compliant to version 4.2 of the specification, i.e. rows with only eight fields are accepted.</p>
+<p>Major work went into fixing SeqAn platform support on non-canonical and big endian platforms, we are proud that also binary formats like BAM pass all tests on platforms like PowerPC64 and ARM64. All main release architectures of Debian GNU/Linux are now well supported and automatically tested. Sparc64 is one of the few platforms known not to work.</p>
+<p>We have improved compatibility with new compilers and the C++17 standard so SeqAn should generate no warnings in 2018, even with stricter warning levels.</p>
+<p>Finally we would like to announce that is going to be the last feature release of SeqAn2. Most of our effort is going into the development of SeqAn3, now, another announcement will cover this shortly. Patch-level releases of SeqAn2 may, however, be released if we find serious bugs or regressions.</p>
+<p>Further links:</p>
+<ul>
+<li><a href="https://github.com/seqan/seqan/blob/master/CHANGELOG.rst" target="_blank">Full Changelog</a></li>
+<li><a href="http://packages.seqan.de/" target="_blank">Downloads</a> (also applications)</li>
+<li><a href="https://www.seqan.de" target="_blank">Homepage</a></li>
+</ul>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>SEQAN 2.2 RELEASED</title>
+		<link>https://www.seqan.de/seqan-2-2-released/</link>
+		
+		<dc:creator><![CDATA[Hannes Hauswedell]]></dc:creator>
+		<pubDate>Thu, 14 Jul 2016 15:36:18 +0000</pubDate>
+				<category><![CDATA[News]]></category>
+		<guid isPermaLink="false">http://www.seqan.de/?p=12640</guid>
+
+					<description><![CDATA[We are pleased to announce the release of version 2.2 of the SeqAn library and updated versions of the official SeqAn-based applications. New features include the preliminary addition of a bi-directional FM-Index and a new interface for performing multiple sequence alignments at the same time. The latter uses SIMD features of modern processors to perform [...]]]></description>
+										<content:encoded><![CDATA[<p>We are pleased to announce the release of version 2.2 of the SeqAn library and updated versions of the official SeqAn-based applications. New features include the preliminary addition of a bi-directional FM-Index and a new interface for performing multiple sequence alignments at the same time. The latter uses <a href="https://en.wikipedia.org/wiki/SIMD" target="_blank" rel="noopener noreferrer">SIMD</a> features of modern processors to perform up to 16 alignments in parallel <strong>per cpu-core</strong> (in addition to possible application level multi-threading). Important &#8220;under the hood&#8221; changes include the replacement of SeqAn&#8217;s custom threading framework with C++11&#8217;s thread library. This fixes some rare, but long-standing bugs in BAM I/O and improves performance slightly.</p>
+<p>There are also major infrastructural changes, including support for the Intel Compiler on all platforms and also experimental support for <a href="https://blogs.msdn.microsoft.com/vcblog/2015/12/04/clang-with-microsoft-codegen-in-vs-2015-update-1/" target="_blank" rel="noopener noreferrer">Clang/C2 on Windows</a>. For the official applications many fixes and improvements to the build system have made all new and optimized binaries possible that work on even more platforms.</p>
+<p>All publicly documented interfaces are preserved and no supported platforms where dropped. It is now our policy that this shall not happen in the 2.x cycle anymore at all so you can trust that your applications work with the next releases. Do note, however, that we dropped some interfaces and supported platforms between 2.0 and 2.1.</p>
+<p>Further links:</p>
+<ul>
+<li><a href="https://github.com/seqan/seqan/blob/master/CHANGELOG.rst" target="_blank" rel="noopener noreferrer">Full Changelog</a></li>
+<li><a href="http://packages.seqan.de/" target="_blank" rel="noopener noreferrer">Downloads</a> (also applications)</li>
+<li><a href="https://www.seqan.de" target="_blank" rel="noopener noreferrer">New Homepage</a></li>
+</ul>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>
