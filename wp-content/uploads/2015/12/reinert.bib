@@ -46,7 +46,7 @@ abstract = {MOTIVATION:Large insertions of novel sequence are an important type 
 
 RESULTS:We present approaches for detecting insertion breakpoints and targeted assembly of large insertions from HTS paired data: BASIL and ANISE. On near identity repeats that are hard for assemblers, ANISE employs a repeat resolution step. This results in far better reconstructions than obtained by the compared methods. On simulated data, we found our insert assembler to be competitive with the de novo assemblers ABYSS and SGA while yielding already anchored inserted sequence as opposed to unanchored contigs as from ABYSS/SGA. On real-world data, we detected novel sequence in a human individual and thoroughly validated the assembled sequence. ANISE was found to be superior to the competing tool MindTheGap on both simulated and real-world data.
 
-AVAILABILITY AND IMPLEMENTATION:ANISE and BASIL are available for download at http://www.seqan.de/projects/herbarium under a permissive open source license.},
+AVAILABILITY AND IMPLEMENTATION:ANISE and BASIL are available for download at https://www.seqan.de/projects/herbarium under a permissive open source license.},
 url = {http://bioinformatics.oxfordjournals.org/content/31/12/1904.full},
 local-url = {file://localhost/Users/reinert/Dropbox/Library.papers3/Files/28/28042B27-15F4-4BEC-A9DB-B1D0A22E6000},
 file = {{28042B27-15F4-4BEC-A9DB-B1D0A22E6000:/Users/reinert/Dropbox/Library.papers3/Files/28/28042B27-15F4-4BEC-A9DB-B1D0A22E6000:application/pdf;28042B27-15F4-4BEC-A9DB-B1D0A22E6000:/Users/reinert/Dropbox/Library.papers3/Files/28/28042B27-15F4-4BEC-A9DB-B1D0A22E6000:application/pdf}},
@@ -206,7 +206,7 @@ abstract = {MOTIVATION:Automatic error correction of high-throughput sequencing 
 
 RESULTS:We present Fiona, a new stand-alone read error-correction method. Fiona provides a new statistical approach for sequencing error detection and optimal error correction and estimates its parameters automatically. Fiona is able to correct substitution, insertion and deletion errors and can be applied to any sequencing technology. It uses an efficient implementation of the partial suffix array to detect read overlaps with different seed lengths in parallel. We tested Fiona on several real datasets from a variety of organisms with different read lengths and compared its performance with state-of-the-art methods. Fiona shows a constantly higher correction accuracy over a broad range of datasets from 454 and Ion Torrent sequencers, without compromise in speed.
 
-CONCLUSION:Fiona is an accurate parameter-free read error-correction method that can be run on inexpensive hardware and can make use of multicore parallelization whenever available. Fiona was implemented using the SeqAn library for sequence analysis and is publicly available for download at http://www.seqan.de/projects/fiona.
+CONCLUSION:Fiona is an accurate parameter-free read error-correction method that can be run on inexpensive hardware and can make use of multicore parallelization whenever available. Fiona was implemented using the SeqAn library for sequence analysis and is publicly available for download at https://www.seqan.de/projects/fiona.
 
 CONTACT:mschulz@mmci.uni-saarland.de or hugues.richard@upmc.fr
 
@@ -240,7 +240,7 @@ abstract = {MOTIVATION:Next-generation sequencing technologies produce unprecede
 
 RESULTS:In this work we present Lambda, our own alternative for BLAST in the context of sequence classification. In our tests, Lambda often outperforms the best tools at reproducing BLAST's results and is the fastest compared with the current state of the art at comparable levels of sensitivity.
 
-AVAILABILITY AND IMPLEMENTATION:Lambda was implemented in the SeqAn open-source C++ library for sequence analysis and is publicly available for download at http://www.seqan.de/projects/lambda.
+AVAILABILITY AND IMPLEMENTATION:Lambda was implemented in the SeqAn open-source C++ library for sequence analysis and is publicly available for download at https://www.seqan.de/projects/lambda.
 
 CONTACT:hannes.hauswedell@fu-berlin.de
 
@@ -269,7 +269,7 @@ date-added = {2014-08-14T06:36:08GMT},
 date-modified = {2015-12-08T08:56:15GMT},
 abstract = {MOTIVATION::Next-generation sequencing (NGS) has revolutionized biomedical research in the past decade and led to a continuous stream of developments in bioinformatics, addressing the need for fast and space-efficient solutions for analyzing NGS data. Often researchers need to analyze a set of genomic sequences that stem from closely related species or are indeed individuals of the same species. Hence, the analyzed sequences are similar. For analyses where local changes in the examined sequence induce only local changes in the results, it is obviously desirable to examine identical or similar regions not repeatedly.
 
-RESULTS::In this work, we provide a datatype that exploits data parallelism inherent in a set of similar sequences by analyzing shared regions only once. In real-world experiments, we show that algorithms that otherwise would scan each reference sequentially can be speeded up by a factor of 115. Availability: The data structure and associated tools are publicly available at http://www.seqan.de/projects/jst and are part of SeqAn, the C++ template library for sequence analysis.
+RESULTS::In this work, we provide a datatype that exploits data parallelism inherent in a set of similar sequences by analyzing shared regions only once. In real-world experiments, we show that algorithms that otherwise would scan each reference sequentially can be speeded up by a factor of 115. Availability: The data structure and associated tools are publicly available at https://www.seqan.de/projects/jst and are part of SeqAn, the C++ template library for sequence analysis.
 
 CONTACT::rene.rahn@fu-berlin.de.},
 url = {http://bioinformatics.oxfordjournals.org/cgi/doi/10.1093/bioinformatics/btu438},
@@ -296,7 +296,7 @@ date-added = {2014-08-14T06:40:59GMT},
 date-modified = {2015-12-08T08:56:37GMT},
 abstract = {MOTIVATION:The landscape of structural variation (SV) including complex duplication and translocation patterns is far from resolved. SV detection tools usually exhibit low agreement, are often geared toward certain types or size ranges of variation and struggle to correctly classify the type and exact size of SVs.
 
-RESULTS:We present Gustaf (Generic mUlti-SpliT Alignment Finder), a sound generic multi-split SV detection tool that detects and classifies deletions, inversions, dispersed duplications and translocations of $\ge$30 bp. Our approach is based on a generic multi-split alignment strategy that can identify SV breakpoints with base pair resolution. We show that Gustaf correctly identifies SVs, especially in the range from 30 to 100 bp, which we call the next-generation sequencing (NGS) twilight zone of SVs, as well as larger SVs >500 bp. Gustaf performs better than similar tools in our benchmark and is furthermore able to correctly identify size and location of dispersed duplications and translocations, which otherwise might be wrongly classified, for example, as large deletions. Availability and implementation: Project information, paper benchmark and source code are available via http://www.seqan.de/projects/gustaf/.
+RESULTS:We present Gustaf (Generic mUlti-SpliT Alignment Finder), a sound generic multi-split SV detection tool that detects and classifies deletions, inversions, dispersed duplications and translocations of $\ge$30 bp. Our approach is based on a generic multi-split alignment strategy that can identify SV breakpoints with base pair resolution. We show that Gustaf correctly identifies SVs, especially in the range from 30 to 100 bp, which we call the next-generation sequencing (NGS) twilight zone of SVs, as well as larger SVs >500 bp. Gustaf performs better than similar tools in our benchmark and is furthermore able to correctly identify size and location of dispersed duplications and translocations, which otherwise might be wrongly classified, for example, as large deletions. Availability and implementation: Project information, paper benchmark and source code are available via https://www.seqan.de/projects/gustaf/.
 
 CONTACT:kathrin.trappe@fu-berlin.de.},
 url = {http://bioinformatics.oxfordjournals.org/content/early/2014/07/29/bioinformatics.btu431.full},
@@ -476,7 +476,7 @@ read = {Yes},
 rating = {5},
 date-added = {2013-02-01T08:24:19GMT},
 date-modified = {2015-12-11T12:51:34GMT},
-abstract = {We present Masai, a read mapper representing the state-of-the-art in terms of speed and accuracy. Our tool is an order of magnitude faster than RazerS 3 and mrFAST, 2-4 times faster and more accurate than Bowtie 2 and BWA. The novelties of our read mapper are filtration with approximate seeds and a method for multiple backtracking. Approximate seeds, compared with exact seeds, increase filtration specificity while preserving sensitivity. Multiple backtracking amortizes the cost of searching a large set of seeds by taking advantage of the repetitiveness of next-generation sequencing data. Combined together, these two methods significantly speed up approximate search on genomic data sets. Masai is implemented in C++ using the SeqAn library. The source code is distributed under the BSD license and binaries for Linux, Mac OS X and Windows can be freely downloaded from http://www.seqan.de/projects/masai.},
+abstract = {We present Masai, a read mapper representing the state-of-the-art in terms of speed and accuracy. Our tool is an order of magnitude faster than RazerS 3 and mrFAST, 2-4 times faster and more accurate than Bowtie 2 and BWA. The novelties of our read mapper are filtration with approximate seeds and a method for multiple backtracking. Approximate seeds, compared with exact seeds, increase filtration specificity while preserving sensitivity. Multiple backtracking amortizes the cost of searching a large set of seeds by taking advantage of the repetitiveness of next-generation sequencing data. Combined together, these two methods significantly speed up approximate search on genomic data sets. Masai is implemented in C++ using the SeqAn library. The source code is distributed under the BSD license and binaries for Linux, Mac OS X and Windows can be freely downloaded from https://www.seqan.de/projects/masai.},
 url = {http://nar.oxfordjournals.org/content/41/7/e78.full},
 local-url = {file://localhost/Users/reinert/Dropbox/Library.papers3/Articles/2013/Siragusa/Nucleic%20Acids%20Res%202013%20Siragusa.pdf},
 file = {{Nucleic Acids Res 2013 Siragusa.pdf:/Users/reinert/Dropbox/Library.papers3/Articles/2013/Siragusa/Nucleic Acids Res 2013 Siragusa.pdf:application/pdf;Nucleic Acids Res 2013 Siragusa.pdf:/Users/reinert/Dropbox/Library.papers3/Articles/2013/Siragusa/Nucleic Acids Res 2013 Siragusa.pdf:application/pdf}},
@@ -528,7 +528,7 @@ abstract = {MOTIVATION:During the past years, next-generation sequencing has bec
 
 RESULTS:RazerS is a read mapping program with adjustable sensitivity based on counting q-grams. In this work, we propose the successor RazerS 3, which now supports shared-memory parallelism, an additional seed-based filter with adjustable sensitivity, a much faster, banded version of the Myers' bit-vector algorithm for verification, memory-saving measures and support for the SAM output format. This leads to a much improved performance for mapping reads, in particular, long reads with many errors. We extensively compare RazerS 3 with other popular read mappers and show that its results are often superior to them in terms of sensitivity while exhibiting practical and often competitive run times. In addition, RazerS 3 works without a pre-computed index.
 
-AVAILABILITY AND IMPLEMENTATION:Source code and binaries are freely available for download at http://www.seqan.de/projects/razers. RazerS 3 is implemented in C++ and OpenMP under a GPL license using the SeqAn library and supports Linux, Mac OS X and Windows.},
+AVAILABILITY AND IMPLEMENTATION:Source code and binaries are freely available for download at https://www.seqan.de/projects/razers. RazerS 3 is implemented in C++ and OpenMP under a GPL license using the SeqAn library and supports Linux, Mac OS X and Windows.},
 url = {http://bioinformatics.oxfordjournals.org/cgi/doi/10.1093/bioinformatics/bts505},
 local-url = {file://localhost/Users/reinert/Dropbox/Library.papers3/Articles/2012/Weese/Bioinformatics%202012%20Weese-1.pdf},
 file = {{Bioinformatics 2012 Weese-1.pdf:/Users/reinert/Dropbox/Library.papers3/Articles/2012/Weese/Bioinformatics 2012 Weese-1.pdf:application/pdf;Bioinformatics 2012 Weese-1.pdf:/Users/reinert/Dropbox/Library.papers3/Articles/2012/Weese/Bioinformatics 2012 Weese-1.pdf:application/pdf}},
@@ -622,7 +622,7 @@ abstract = {MOTIVATION:The reliable detection of genomic variation in resequenci
 
 RESULTS:Here we present a method for 'split' read mapping, where prefix and suffix match of a read may be interrupted by a longer gap in the read-to-reference alignment. We use this method to accurately detect medium-sized insertions and long deletions with precise breakpoints in genomic resequencing data. Compared with alternative split mapping methods, SplazerS significantly improves sensitivity for detecting large indel events, especially in variant-rich regions. Our method is robust in the presence of sequencing errors as well as alignment errors due to genomic mutations/divergence, and can be used on reads of variable lengths. Our analysis shows that SplazerS is a versatile tool applicable to unanchored or single-end as well as anchored paired-end reads. In addition, application of SplazerS to targeted resequencing data led to the interesting discovery of a complete, possibly functional gene retrocopy variant.
 
-AVAILABILITY:SplazerS is available from http://www.seqan.de/projects/ splazers.
+AVAILABILITY:SplazerS is available from https://www.seqan.de/projects/ splazers.
 
 SUPPLEMENTARY INFORMATION:Supplementary data are available at Bioinformatics online.},
 url = {http://bioinformatics.oxfordjournals.org/content/28/5/619.full},
@@ -849,7 +849,7 @@ read = {Yes},
 rating = {0},
 date-added = {2011-06-08T20:42:08GMT},
 date-modified = {2015-11-06T12:10:16GMT},
-abstract = {Second generation sequencing technologies yield DNA sequence data at ultra high-throughput. Common to most biological applications is a mapping of the reads to an almost identical or highly similar reference genome. The assessment of the quality of read mapping results is not straightforward and has not been formalized so far. Hence, it has not been easy to compare different read mapping approaches in a unified way and to determine which program is the best for what task.We present a new benchmark method, called Rabema (Read Alignment BEnchMArk), for read mappers. It consists of a strict definition of the read mapping problem and of tools to evaluate the result of arbitrary read mappers supporting the SAM output format.We show the usefulness of the benchmark program by performing a comparison of popular read mappers. The tools supporting the benchmark are licensed under the GPL and available from http://www.seqan.de/projects/rabema.html.},
+abstract = {Second generation sequencing technologies yield DNA sequence data at ultra high-throughput. Common to most biological applications is a mapping of the reads to an almost identical or highly similar reference genome. The assessment of the quality of read mapping results is not straightforward and has not been formalized so far. Hence, it has not been easy to compare different read mapping approaches in a unified way and to determine which program is the best for what task.We present a new benchmark method, called Rabema (Read Alignment BEnchMArk), for read mappers. It consists of a strict definition of the read mapping problem and of tools to evaluate the result of arbitrary read mappers supporting the SAM output format.We show the usefulness of the benchmark program by performing a comparison of popular read mappers. The tools supporting the benchmark are licensed under the GPL and available from https://www.seqan.de/projects/rabema.html.},
 url = {http://www.biomedcentral.com/1471-2105/12/210/abstract},
 local-url = {file://localhost/Users/reinert/Dropbox/Library.papers3/Articles/2011/Holtgrewe/BMC%20Bioinformatics%202011%20Holtgrewe.pdf},
 file = {{BMC Bioinformatics 2011 Holtgrewe.pdf:/Users/reinert/Dropbox/Library.papers3/Articles/2011/Holtgrewe/BMC Bioinformatics 2011 Holtgrewe.pdf:application/pdf;BMC Bioinformatics 2011 Holtgrewe.pdf:/Users/reinert/Dropbox/Library.papers3/Articles/2011/Holtgrewe/BMC Bioinformatics 2011 Holtgrewe.pdf:application/pdf}},
@@ -919,7 +919,7 @@ abstract = {MOTIVATION:Deep sequencing has become the method of choice for deter
 
 RESULTS:We present MicroRazerS, a tool optimized for mapping small RNAs onto a reference genome. It is an order of magnitude faster than Mega BLAST and comparable in speed with other short read mapping tools. In addition, it is more sensitive and easy to handle and adjust.
 
-AVAILABILITY:MicroRazerS is part of the SeqAn C++ library and can be downloaded from http://www.seqan.de/projects/MicroRazerS.html.},
+AVAILABILITY:MicroRazerS is part of the SeqAn C++ library and can be downloaded from https://www.seqan.de/projects/MicroRazerS.html.},
 url = {http://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?dbfrom=pubmed&id=19880369&retmode=ref&cmd=prlinks},
 local-url = {file://localhost/Users/reinert/Dropbox/Library.papers3/Articles/2010/Emde/Bioinformatics%202010%20Emde.pdf},
 file = {{Bioinformatics 2010 Emde.pdf:/Users/reinert/Dropbox/Library.papers3/Articles/2010/Emde/Bioinformatics 2010 Emde.pdf:application/pdf}},
@@ -1060,7 +1060,7 @@ abstract = {MOTIVATION:Novel high-throughput sequencing technologies pose new al
 
 RESULTS:A multi-read alignment algorithm for de novo or reference-guided genome assembly is presented. The program identifies segments shared by multiple reads and then aligns these segments using a consistency-enhanced alignment graph. On real de novo sequencing data obtained from the newly established NCBI Short Read Archive, the program performs similarly in quality to other comparable programs. On more challenging simulated datasets for insert sequencing and variation analyses, our program outperforms the other tools.
 
-AVAILABILITY:The consensus program can be downloaded from http://www.seqan.de/projects/consensus.html. It can be used stand-alone or in conjunction with the Celera Assembler. Both application scenarios as well as the usage of the tool are described in the documentation.},
+AVAILABILITY:The consensus program can be downloaded from https://www.seqan.de/projects/consensus.html. It can be used stand-alone or in conjunction with the Celera Assembler. Both application scenarios as well as the usage of the tool are described in the documentation.},
 url = {http://bioinformatics.oxfordjournals.org/cgi/content/short/25/9/1118},
 local-url = {file://localhost/Users/reinert/Dropbox/Library.papers3/Articles/2009/Rausch/Bioinformatics%202009%20Rausch.pdf},
 file = {{Bioinformatics 2009 Rausch.pdf:/Users/reinert/Dropbox/Library.papers3/Articles/2009/Rausch/Bioinformatics 2009 Rausch.pdf:application/pdf}},
@@ -1187,7 +1187,7 @@ abstract = {MOTIVATION:Many multiple sequence alignment tools have been develope
 
 RESULTS:We introduce a graph-based extension to the consistency-based, progressive alignment strategy. We apply the consistency notion to segments instead of single characters. The main problem we solve in this context is to define segments of the sequences in such a way that a graph-based alignment is possible. We implemented the algorithm using the SeqAn library and report results on amino acid and DNA sequences. The benefit of our approach is threefold: (1) sequences with conserved blocks can be rapidly aligned, (2) the implementation is conceptually easy, generic and fast and (3) the consistency idea can be extended to align multiple genomic sequences.
 
-AVAILABILITY:The segment-based multiple sequence alignment tool can be downloaded from http://www.seqan.de/projects/msa.html. A novel version of T-Coffee interfaced with the tool is available from http://www.tcoffee.org. The usage of the tool is described in both documentations.},
+AVAILABILITY:The segment-based multiple sequence alignment tool can be downloaded from https://www.seqan.de/projects/msa.html. A novel version of T-Coffee interfaced with the tool is available from http://www.tcoffee.org. The usage of the tool is described in both documentations.},
 url = {http://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?dbfrom=pubmed&id=18689823&retmode=ref&cmd=prlinks},
 local-url = {file://localhost/Users/reinert/Dropbox/Library.papers3/Articles/2008/Rausch/Bioinformatics%202008%20Rausch.pdf},
 file = {{Bioinformatics 2008 Rausch.pdf:/Users/reinert/Dropbox/Library.papers3/Articles/2008/Rausch/Bioinformatics 2008 Rausch.pdf:application/pdf}},
